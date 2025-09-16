@@ -15,7 +15,10 @@ SECRET_KEY = 'django-insecure-6d^8zl+%^!r7^e)3ruwwwr-zs=v87-qox0iz0r^gcb-b2l1pql
 DEBUG = True
 
 # Add your Render app domain here
-ALLOWED_HOSTS = ['your-app.onrender.com']  # Replace with your actual Render URL
+ALLOWED_HOSTS = [
+    'django-todo-app-2-qbkt.onrender.com',  # Add your Render app URL
+]
+
 
 
 # Application definition
