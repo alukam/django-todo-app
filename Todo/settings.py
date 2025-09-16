@@ -63,6 +63,7 @@ WSGI_APPLICATION = 'Todo.wsgi.application'
 
 
 # Database
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -73,6 +74,16 @@ DATABASES = {
         'PORT': '3306',          
     }
 }
+"""
+import dj_database_url
+
+DATABASES = {
+    'default': dj_database_url.parse(
+        'postgres://taskdb_ahrv_user:kIWrJyd0Nw3LuJ09DBzhjxK4gbqlHW3F@dpg-d34tkder433s738bvsr0-a:5432/taskdb_ahrv',
+        conn_max_age=600
+    )
+}
+
 
 
 # Password validation
